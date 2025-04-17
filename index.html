@@ -1,7 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Template</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <div class="contact-container">
+    <header class="contact-header">
+      <h1>{{name}}</h1>
+      <p>{{title}}</p>
+    </header>
+
+    <div class="contact-details">
+      <h2>Contact Information</h2>
+      <p><strong>Phone:</strong> <a href="tel:{{phone}}">{{phone}}</a></p>
+      <p><strong>Email:</strong> <a href="mailto:{{email}}">{{email}}</a></p>
+      <p><strong>Website:</strong> <a href="{{website}}" target="_blank">{{website}}</a></p>
+      <p><strong>Location:</strong> {{location}}</p>
+    </div>
+
+    <div class="social-media">
+      <h2>Connect with Me</h2>
+      <div class="social-buttons">
+        <a href="{{linkedin}}" class="social-btn linkedin" target="_blank">LinkedIn</a>
+        <a href="{{instagram}}" class="social-btn instagram" target="_blank">Instagram</a>
+        <a href="{{twitter}}" class="social-btn twitter" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
